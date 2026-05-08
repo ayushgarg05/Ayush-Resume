@@ -1,20 +1,69 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Ayush Garg | Software Engineer III Portfolio
 
-# Run and deploy your AI Studio app
+A premium, interactive developer portfolio featuring a terminal-inspired UI, career timeline, and project showcase. Built with a focus on high-performance backend architecture and mission-critical AI solutions.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/fad47dfb-5126-4555-afff-d5f5259581ac
+- **Terminal-Style OS Interface**: Interactive loading sequence and file-system navigation.
+- **Identity System**: Deep dive into core technical skills and engineering philosophy.
+- **Career Logs**: Detailed work history from Jio Platforms, Innovaccer, and American Express.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+- **Secure Contact Channel**: Integrated contact form with server-side processing.
 
-## Run Locally
+## 🛠 Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend**: React 19, Motion (Framer Motion), Lucide Icons.
+- **Styling**: Tailwind CSS 4.0.
+- **Backend**: Express.js (Full-stack setup with Vite middleware).
+- **Runtime**: Node.js with TypeScript (`tsx`).
+- **AI Integration**: Google Gemini API ready.
 
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS recommended)
+- npm or yarn
+
+### Installation
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Configure environment variables:
+   Copy `.env.example` to `.env` and fill in the required keys.
+   ```bash
+   cp .env.example .env
+   ```
+
+### Development
+
+Start the development server (runs Express with Vite middleware):
+```bash
+npm run dev
+```
+The app will be available at `http://localhost:3000`.
+
+### Build & Production
+
+1. Build the production assets:
+   ```bash
+   npm run build
+   ```
+
+2. Start the production server:
+   ```bash
+   npm start
+   ```
+
+## 🔐 Environment Variables
+
+- `GEMINI_API_KEY`: Required for Gemini AI features.
+- `RESEND_API_KEY`: Optional, used for the contact form email functionality.
+- `APP_URL`: The base URL of the deployed application.
+
+## 📄 License
+
+MIT
