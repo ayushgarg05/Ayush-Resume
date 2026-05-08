@@ -243,7 +243,7 @@ function Hero() {
         <pre className="text-xs md:text-base leading-relaxed overflow-x-auto no-scrollbar font-mono relative z-10">
           <span className="text-mauve">const</span> <span className="text-blue">lead_engineer</span> = <span className="text-yellow">{"{"}</span>
           <br/>  <span className="text-blue">"experience"</span>: <span className="text-peach">"7+ years"</span>,
-          <br/>  <span className="text-blue">"core_stack"</span>: <span className="text-peach">["Python", "Java", "LLMs", "Kafka"]</span>,
+          <br/>  <span className="text-blue">"core_stack"</span>: <span className="text-peach">["Python", "Java", "LLMs", "Kafka", "Kubernetes", "GCP", "FastAPI"]</span>,
           <br/>  <span className="text-blue">"philosophy"</span>: <span className="text-peach">"Scalability_is_not_optional"</span>
           <br/><span className="text-yellow">{"}"}</span>
         </pre>
@@ -291,7 +291,7 @@ function About() {
                 I am a results-driven <span className="text-white">Software Engineer III</span> with over 7+ years of expertise in architecting high-performance backend systems and mission-critical AI solutions.
               </p>
               <p className="text-gray-500 text-base md:text-lg">
-                My career has been defined by a deep focus on <span className="text-blue">Scalability</span> and <span className="text-peach">Infrastructure Reliability</span>. From optimizing global fintech pipelines at American Express to engineering AI healthcare agents at Innovaccer, I specialize in building systems that don't just work—they excel under heavy load.
+                My career has been defined by a deep focus on <span className="text-blue">Scalability</span> and <span className="text-peach">Infrastructure Reliability</span>. I have successfully architected high-throughput job engines and real-time AI agents at Jio, mission-critical healthcare systems at Innovaccer, and robust financial automation pipelines at American Express.
               </p>
               <div className="p-6 md:p-8 bg-surface-dim rounded-3xl border border-border-subtle relative italic text-gray-300 shadow-2xl overflow-hidden group">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-mauve/5 rounded-full -mr-16 -mt-16 blur-3xl group-hover:bg-mauve/10 transition-colors" />
