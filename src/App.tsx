@@ -239,7 +239,7 @@ function Hero() {
 
       <div className="bg-surface-dim p-4 md:p-10 rounded-3xl border border-border-subtle max-w-3xl shadow-2xl relative group overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-mauve/5 via-transparent to-blue/5 pointer-events-none" />
-        <div className="absolute top-4 right-6 text-[10px] text-gray-700 font-mono tracking-widest">AYUSH_GARG_METADATA.JSON</div>
+        <div className="absolute top-4 right-6 text-[10px] text-gray-500 font-mono tracking-widest">AYUSH_GARG_METADATA.JSON</div>
         <pre className="text-xs md:text-base leading-relaxed overflow-x-auto no-scrollbar font-mono relative z-10">
           <span className="text-mauve">const</span> <span className="text-blue">lead_engineer</span> = <span className="text-yellow">{"{"}</span>
           <br/>  <span className="text-blue">"experience"</span>: <span className="text-peach">"7+ years"</span>,
@@ -303,20 +303,20 @@ function About() {
 
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-surface-header border border-border-subtle rounded-3xl p-8 shadow-2xl relative h-full">
-              <div className="absolute top-4 right-6 text-[10px] text-gray-700 font-mono">01_CORE_TECH_STACK</div>
+              <div className="absolute top-4 right-6 text-[10px] text-gray-300 font-mono">01_CORE_TECH_STACK</div>
               <h3 className="text-xs font-black text-mauve uppercase tracking-[0.3em] mb-10 flex items-center gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-mauve animate-ping" /> TECHNICAL_SKILLS
               </h3>
               <div className="space-y-8">
                 {Object.entries(RESUME_DATA.skills).map(([category, items]) => (
                   <div key={category} className="space-y-4">
-                    <div className="text-[10px] uppercase text-gray-600 font-black tracking-[0.2em] flex items-center gap-2">
-                      <div className="w-1 h-3 bg-gray-800" />
+                    <div className="text-[10px] uppercase text-gray-200 font-black tracking-[0.2em] flex items-center gap-2">
+                      <div className="w-1 h-3 bg-mauve/40" />
                       {category.replace('_', ' ')}
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {(items as string[]).map((skill, i) => (
-                        <span key={`${category}-${i}`} className="px-3 py-1.5 bg-surface-darker border border-border-subtle text-[11px] font-bold rounded-lg text-gray-400 hover:text-mauve hover:border-mauve transition-all cursor-default">
+                        <span key={`${category}-${i}`} className="px-3 py-1.5 bg-surface-darker border border-border-subtle text-[11px] font-bold rounded-lg text-gray-100 hover:text-mauve hover:border-mauve transition-all cursor-default">
                           {skill}
                         </span>
                       ))}
@@ -447,7 +447,7 @@ function Contact() {
     >
       <div className="text-center space-y-3 px-4">
         <h2 className="text-4xl md:text-5xl font-black text-white italic tracking-tighter uppercase">Get In Touch</h2>
-        <p className="text-gray-600 font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.4em]">Establish a Direct Connection Channel</p>
+        <p className="text-gray-400 font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.4em]">Establish a Direct Connection Channel</p>
       </div>
 
       <div className="bg-surface-dim border border-border-subtle rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl relative mx-4 md:mx-0">
@@ -489,8 +489,8 @@ function Contact() {
               <FormInput name="sender_name" label="Full Name / Organization" placeholder="e.g. Hiring Manager at Google" />
               <FormInput name="sender_email" label="Business Email" type="email" placeholder="name@company.com" />
               <div className="space-y-2">
-                <label className="text-[10px] uppercase text-gray-600 font-black ml-1 tracking-widest">$ message_body</label>
-                <textarea name="message_body" required rows={4} placeholder="Hello Ayush, we're interested in your experience with..." className="w-full bg-surface-darker border border-border-subtle rounded-xl px-4 md:px-5 py-3 md:py-4 text-white text-sm focus:border-green outline-none transition-all resize-none placeholder:text-gray-800 font-mono shadow-inner" />
+                <label className="text-[10px] uppercase text-white font-black ml-1 tracking-widest">$ message_body</label>
+                <textarea name="message_body" required rows={4} placeholder="Hello Ayush, we're interested in your experience with..." className="w-full bg-surface-darker border border-border-subtle rounded-xl px-4 md:px-5 py-3 md:py-4 text-white text-sm focus:border-green outline-none transition-all resize-none placeholder:text-gray-400 font-mono shadow-inner" />
               </div>
             </div>
             <button 
@@ -526,8 +526,8 @@ function Contact() {
 function FormInput({ name, label, type = "text", placeholder }: { name: string; label: string; type?: string; placeholder: string }) {
   return (
     <div className="space-y-2">
-      <label className="text-[10px] uppercase text-gray-600 font-black ml-1 tracking-widest">$ {label}</label>
-      <input name={name} required type={type} placeholder={placeholder} className="w-full bg-surface-darker border border-border-subtle rounded-xl px-5 py-4 text-white text-sm focus:border-mauve outline-none transition-all placeholder:text-gray-800 font-mono shadow-inner" />
+      <label className="text-[10px] uppercase text-white font-black ml-1 tracking-widest">$ {label}</label>
+      <input name={name} required type={type} placeholder={placeholder} className="w-full bg-surface-darker border border-border-subtle rounded-xl px-5 py-4 text-white text-sm focus:border-mauve outline-none transition-all placeholder:text-gray-400 font-mono shadow-inner" />
     </div>
   );
 }
