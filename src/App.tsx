@@ -228,12 +228,12 @@ function Hero() {
           <span>AyushGarg.initialize()</span>
           <span className="inline-block w-2 h-5 bg-green animate-pulse"></span>
         </div>
-        <h1 className="text-6xl md:text-9xl font-black text-white tracking-tighter leading-none uppercase select-none">
+        <h1 className="text-4xl sm:text-6xl md:text-9xl font-black text-white tracking-tighter leading-none uppercase select-none">
           AYUSH <span className="text-mauve italic">GARG</span>
         </h1>
       </div>
       
-      <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed font-medium">
+      <p className="text-lg md:text-2xl text-gray-400 max-w-3xl leading-relaxed font-medium">
         Specializing in <span className="text-blue">Hyperscale Backend Architecture</span>, <span className="text-peach">Distributed Systems</span>, and <span className="text-green">AI Integration</span>. Currently optimizing healthcare workflows at Innovaccer.
       </p>
 
@@ -242,23 +242,22 @@ function Hero() {
         <div className="absolute top-4 right-6 text-[10px] text-gray-700 font-mono tracking-widest">AYUSH_GARG_METADATA.JSON</div>
         <pre className="text-xs md:text-base leading-relaxed overflow-x-auto no-scrollbar font-mono relative z-10">
           <span className="text-mauve">const</span> <span className="text-blue">lead_engineer</span> = <span className="text-yellow">{"{"}</span>
-          <br/>  <span className="text-blue">"experience"</span>: <span className="text-peach">"6+_Continuous_Years"</span>,
+          <br/>  <span className="text-blue">"experience"</span>: <span className="text-peach">"7+ years"</span>,
           <br/>  <span className="text-blue">"core_stack"</span>: <span className="text-peach">["Python", "Java", "LLMs", "Kafka"]</span>,
-          <br/>  <span className="text-blue">"achievements"</span>: <span className="text-peach">"Engineered_High-Throughput_Data_Pipelines"</span>,
           <br/>  <span className="text-blue">"philosophy"</span>: <span className="text-peach">"Scalability_is_not_optional"</span>
           <br/><span className="text-yellow">{"}"}</span>
         </pre>
       </div>
 
-      <div className="flex flex-wrap items-center gap-8 pt-6">
-         <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-6 md:gap-8 pt-6">
+         <div className="flex gap-4 justify-center sm:justify-start">
            <SocialLink href={RESUME_DATA.linkedin} icon={<Linkedin size={22} />} />
            <SocialLink href="https://github.com" icon={<Github size={22} />} />
          </div>
          <a 
            href="/resume.pdf" 
            download="Ayush_Garg_Resume.pdf"
-           className="flex-1 md:flex-none px-12 py-5 bg-mauve text-surface-darker font-black text-xs uppercase tracking-[0.3em] rounded hover:bg-white transition-all transform hover:-translate-y-1 active:translate-y-0 shadow-[0_20px_40px_-10px_rgba(203,166,247,0.4)] text-center no-underline"
+           className="px-8 md:px-12 py-4 md:py-5 bg-mauve text-surface-darker font-black text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] rounded hover:bg-white transition-all transform hover:-translate-y-1 active:translate-y-0 shadow-[0_20px_40px_-10px_rgba(203,166,247,0.4)] text-center no-underline"
          >
            DOWNLOAD_SPEC_SHEET.PDF
          </a>
@@ -273,74 +272,63 @@ function About() {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
-      className="space-y-16"
+      className="space-y-16 max-w-6xl mx-auto"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pb-12">
-        <div className="space-y-10">
-          <div className="space-y-2">
-            <h2 className="text-4xl md:text-6xl font-black text-white leading-tight uppercase">
-              System <span className="text-mauve italic">Overview</span>
-            </h2>
-            <div className="h-1 w-20 bg-mauve" />
+      <div className="space-y-12">
+        <div className="space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-mauve/10 border border-mauve/20 rounded-full text-mauve text-[10px] font-black tracking-widest uppercase">
+            <User size={12} /> Identity_System
           </div>
-          <div className="space-y-8 text-gray-400 text-xl leading-relaxed font-medium">
-            <p className="border-l-2 border-mauve pl-6">
-              I am a results-driven <span className="text-white">Software Engineer III</span> with 6+ years of experience in architecting high-performance backend systems and deploying mission-critical AI solutions.
-            </p>
-            <p className="text-gray-500 text-lg">
-              Throughout my tenure at <span className="text-blue">American Express</span>, <span className="text-blue">Jio Platforms</span>, and <span className="text-blue">Innovaccer</span>, I've specialized in transforming complex business requirements into scalable technical implementations that drive significant ROI.
-            </p>
-            <div className="p-8 bg-surface-dim rounded-3xl border border-border-subtle relative italic text-gray-300 shadow-inner">
-              <span className="text-6xl text-mauve/10 absolute -top-4 -left-2 select-none font-black font-serif">"</span>
-              I balance a high-performance innovative mindset with rigorous engineering standards to solve the industry's most challenging scalability bottlenecks.
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-2 gap-6">
-            <StatsBox value="6+" label="YEARS_XP" color="blue" />
-            <StatsBox value="100%" label="HIPAA_COMPLIANT" color="peach" />
-          </div>
+          <h2 className="text-4xl md:text-7xl font-black text-white leading-tight uppercase">
+            System <span className="text-mauve italic">Overview</span>
+          </h2>
         </div>
 
-        <div className="space-y-6">
-          <div className="bg-surface-header border border-border-subtle rounded-3xl p-8 shadow-2xl relative">
-            <div className="absolute top-4 right-6 text-[10px] text-gray-700 font-mono">01_CORE_TECH_STACK</div>
-            <h3 className="text-xs font-black text-mauve uppercase tracking-[0.3em] mb-8 flex items-center gap-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-mauve animate-ping" /> TECHNICAL_SKILLS
-            </h3>
-            <div className="space-y-6">
-              {Object.entries(RESUME_DATA.skills).map(([category, items]) => (
-                <div key={category} className="space-y-3">
-                  <div className="text-[10px] uppercase text-gray-500 font-bold tracking-widest">{category.replace('_', ' ')}</div>
-                  <div className="flex flex-wrap gap-2">
-                    {(items as string[]).map((skill, i) => (
-                      <span key={`${category}-${i}`} className="px-3 py-1.5 bg-surface-dim border border-border-subtle text-[11px] font-bold rounded-lg text-gray-400 hover:text-white hover:border-blue transition-all cursor-default">
-                        {skill}
-                      </span>
-                    ))}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
+          <div className="lg:col-span-7 space-y-6 md:space-y-8">
+            <div className="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed font-medium">
+              <p className="border-l-4 border-mauve pl-5 md:pl-6 py-2 bg-mauve/5 rounded-r-2xl">
+                I am a results-driven <span className="text-white">Software Engineer III</span> with over 7+ years of expertise in architecting high-performance backend systems and mission-critical AI solutions.
+              </p>
+              <p className="text-gray-500 text-base md:text-lg">
+                My career has been defined by a deep focus on <span className="text-blue">Scalability</span> and <span className="text-peach">Infrastructure Reliability</span>. From optimizing global fintech pipelines at American Express to engineering AI healthcare agents at Innovaccer, I specialize in building systems that don't just work—they excel under heavy load.
+              </p>
+              <div className="p-6 md:p-8 bg-surface-dim rounded-3xl border border-border-subtle relative italic text-gray-300 shadow-2xl overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-mauve/5 rounded-full -mr-16 -mt-16 blur-3xl group-hover:bg-mauve/10 transition-colors" />
+                <span className="text-5xl md:text-6xl text-mauve/10 absolute -top-4 -left-2 select-none font-black font-serif">"</span>
+                I approach software as a craft, balancing rapid innovation with the rigorous standards required for production-grade, fault-tolerant ecosystems.
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 space-y-6">
+            <div className="bg-surface-header border border-border-subtle rounded-3xl p-8 shadow-2xl relative h-full">
+              <div className="absolute top-4 right-6 text-[10px] text-gray-700 font-mono">01_CORE_TECH_STACK</div>
+              <h3 className="text-xs font-black text-mauve uppercase tracking-[0.3em] mb-10 flex items-center gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-mauve animate-ping" /> TECHNICAL_SKILLS
+              </h3>
+              <div className="space-y-8">
+                {Object.entries(RESUME_DATA.skills).map(([category, items]) => (
+                  <div key={category} className="space-y-4">
+                    <div className="text-[10px] uppercase text-gray-600 font-black tracking-[0.2em] flex items-center gap-2">
+                      <div className="w-1 h-3 bg-gray-800" />
+                      {category.replace('_', ' ')}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {(items as string[]).map((skill, i) => (
+                        <span key={`${category}-${i}`} className="px-3 py-1.5 bg-surface-darker border border-border-subtle text-[11px] font-bold rounded-lg text-gray-400 hover:text-mauve hover:border-mauve transition-all cursor-default">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </motion.section>
-  );
-}
-
-function StatsBox({ value, label, color }: { value: string; label: string; color: string }) {
-  const colors: Record<string, string> = {
-    blue: "text-blue",
-    peach: "text-peach",
-    green: "text-green",
-    mauve: "text-mauve"
-  };
-  return (
-    <div className="bg-surface-dim border border-border-subtle rounded-2xl p-6 text-center group hover:border-blue/50 transition-colors">
-      <div className={cn("text-3xl font-black mb-1", colors[color])}>{value}</div>
-      <div className="text-[10px] text-gray-600 font-bold uppercase tracking-widest group-hover:text-gray-400 transition-colors">{label}</div>
-    </div>
   );
 }
 
@@ -457,59 +445,59 @@ function Contact() {
       animate={{ opacity: 1 }}
       className="max-w-xl mx-auto space-y-16 py-8"
     >
-      <div className="text-center space-y-4">
-        <h2 className="text-5xl font-black text-white italic tracking-tighter uppercase">Get In Touch</h2>
-        <p className="text-gray-600 font-mono text-xs uppercase tracking-[0.4em]">Establish a Direct Connection Channel</p>
+      <div className="text-center space-y-3 px-4">
+        <h2 className="text-4xl md:text-5xl font-black text-white italic tracking-tighter uppercase">Get In Touch</h2>
+        <p className="text-gray-600 font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.4em]">Establish a Direct Connection Channel</p>
       </div>
 
-      <div className="bg-surface-dim border border-border-subtle rounded-3xl overflow-hidden shadow-2xl relative">
+      <div className="bg-surface-dim border border-border-subtle rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl relative mx-4 md:mx-0">
         <div className="h-2 bg-gradient-to-r from-red via-mauve to-blue" />
         
         {status === "success" ? (
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="p-16 text-center space-y-8"
+            className="p-8 md:p-16 text-center space-y-8"
           >
-            <div className="w-24 h-24 bg-green/10 flex items-center justify-center rounded-3xl mx-auto text-green group shadow-[0_0_30px_rgba(166,227,161,0.1)] border border-green/20">
-              <Send size={40} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            <div className="w-20 h-20 md:w-24 md:h-24 bg-green/10 flex items-center justify-center rounded-2xl md:rounded-3xl mx-auto text-green group shadow-[0_0_30px_rgba(166,227,161,0.1)] border border-green/20">
+              <Send size={32} className="md:size-[40px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </div>
             <div className="space-y-3">
-              <h3 className="text-3xl font-black text-white">MESSAGE SENT.</h3>
-              <p className="text-gray-500 leading-relaxed">Thank you for reaching out. I will review your message and respond shortly.</p>
+              <h3 className="text-2xl md:text-3xl font-black text-white">MESSAGE SENT.</h3>
+              <p className="text-gray-500 text-sm md:text-base leading-relaxed">Thank you for reaching out. I will review your message and respond shortly.</p>
             </div>
-            <button onClick={() => setStatus("idle")} className="bg-surface-header border border-border-subtle px-8 py-3 rounded-xl text-xs font-bold hover:bg-mauve hover:text-surface-darker transition-all">SEND_ANOTHER</button>
+            <button onClick={() => setStatus("idle")} className="bg-surface-header border border-border-subtle px-6 py-3 rounded-xl text-[10px] md:text-xs font-bold hover:bg-mauve hover:text-surface-darker transition-all">SEND_ANOTHER</button>
           </motion.div>
         ) : status === "error" ? (
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="p-16 text-center space-y-8"
+            className="p-8 md:p-16 text-center space-y-8"
           >
-            <div className="w-24 h-24 bg-red/10 flex items-center justify-center rounded-3xl mx-auto text-red border border-red/20 shadow-[0_0_30px_rgba(237,135,150,0.1)]">
-              <div className="text-4xl font-black">!</div>
+            <div className="w-20 h-20 md:w-24 md:h-24 bg-red/10 flex items-center justify-center rounded-2xl md:rounded-3xl mx-auto text-red border border-red/20 shadow-[0_0_30px_rgba(237,135,150,0.1)]">
+              <div className="text-3xl md:text-4xl font-black">!</div>
             </div>
             <div className="space-y-3">
-              <h3 className="text-3xl font-black text-white italic">DISPATCH FAILED.</h3>
-              <p className="text-gray-500 leading-relaxed">The relay server is currently unreachable. Please try again or reach out via LinkedIn.</p>
+              <h3 className="text-2xl md:text-3xl font-black text-white italic">DISPATCH FAILED.</h3>
+              <p className="text-gray-500 text-sm md:text-base leading-relaxed">The relay server is currently unreachable. Please try again or reach out via LinkedIn.</p>
             </div>
-            <button onClick={() => setStatus("idle")} className="bg-surface-header border border-border-subtle px-8 py-3 rounded-xl text-xs font-bold hover:bg-red hover:text-surface-darker transition-all">RETRY_TRANSMISSION</button>
+            <button onClick={() => setStatus("idle")} className="bg-surface-header border border-border-subtle px-6 py-3 rounded-xl text-[10px] md:text-xs font-bold hover:bg-red hover:text-surface-darker transition-all">RETRY_TRANSMISSION</button>
           </motion.div>
         ) : (
-          <form className="p-10 space-y-8" onSubmit={handleSubmit}>
-            <div className="space-y-6">
+          <form className="p-6 md:p-10 space-y-6 md:space-y-8" onSubmit={handleSubmit}>
+            <div className="space-y-5 md:space-y-6">
               <FormInput name="sender_name" label="Full Name / Organization" placeholder="e.g. Hiring Manager at Google" />
               <FormInput name="sender_email" label="Business Email" type="email" placeholder="name@company.com" />
               <div className="space-y-2">
                 <label className="text-[10px] uppercase text-gray-600 font-black ml-1 tracking-widest">$ message_body</label>
-                <textarea name="message_body" required rows={4} placeholder="Hello Ayush, we're interested in your experience with..." className="w-full bg-surface-darker border border-border-subtle rounded-xl px-5 py-4 text-white text-sm focus:border-green outline-none transition-all resize-none placeholder:text-gray-800 font-mono shadow-inner" />
+                <textarea name="message_body" required rows={4} placeholder="Hello Ayush, we're interested in your experience with..." className="w-full bg-surface-darker border border-border-subtle rounded-xl px-4 md:px-5 py-3 md:py-4 text-white text-sm focus:border-green outline-none transition-all resize-none placeholder:text-gray-800 font-mono shadow-inner" />
               </div>
             </div>
             <button 
               disabled={status === "sending"}
               type="submit" 
               className={cn(
-                "w-full py-5 bg-mauve text-surface-darker font-black text-sm uppercase tracking-[0.3em] rounded-xl shadow-xl hover:bg-white transition-all transform active:scale-[0.98] relative overflow-hidden group",
+                "w-full py-4 md:py-5 bg-mauve text-surface-darker font-black text-xs md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] rounded-xl shadow-xl hover:bg-white transition-all transform active:scale-[0.98] relative overflow-hidden group",
                 status === "sending" && "opacity-50 cursor-wait"
               )}
             >
@@ -520,7 +508,7 @@ function Contact() {
         )}
       </div>
 
-      <div className="flex justify-center flex-wrap gap-x-12 gap-y-4 text-[10px] font-bold font-mono text-gray-700 uppercase tracking-widest">
+      <div className="flex justify-center flex-wrap gap-x-6 md:gap-x-12 gap-y-4 px-6 text-[9px] md:text-[10px] font-bold font-mono text-gray-700 uppercase tracking-widest text-center">
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-green shadow-[0_0_8px_#a6e3a1]" /> CHANNEL: SECURE
         </div>

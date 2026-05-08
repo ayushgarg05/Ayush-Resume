@@ -1,13 +1,13 @@
 export const RESUME_DATA = {
   name: "Ayush Garg",
   title: "Software Engineer III",
-  experience_years: "6+",
+  experience_years: "7+",
   email: "ayushgarg05@gmail.com",
   phone: "+91 9479356841",
   linkedin: "https://in.linkedin.com/in/ayushgarg05",
   website: "https://findayush.com",
   location: "Noida, India",
-  summary: "Software Developer with 6+ years of experience in designing scalable backend systems, AI-powered applications, and cloud-based solutions. Proficient in Python-based frameworks, microservices architecture, and data-driven automation.",
+  summary: "Software Developer with 7+ years of experience in designing scalable backend systems, AI-powered applications, and cloud-based solutions. Proficient in Python-based frameworks, microservices architecture, and data-driven automation.",
   skills: {
     languages: ["Python (Expert)", "Java", "Go", "TypeScript", "JavaScript", "SQL"],
     backend: ["FastAPI", "Flask", "Django", "Spring Boot", "Node.js", "REST & gRPC APIs", "Microservices Architecture"],
