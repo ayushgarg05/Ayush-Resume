@@ -244,7 +244,7 @@ function Hero() {
           <span className="text-mauve">const</span> <span className="text-blue">lead_engineer</span> = <span className="text-yellow">{"{"}</span>
           <br/>  <span className="text-blue">"experience"</span>: <span className="text-peach">"6+_Continuous_Years"</span>,
           <br/>  <span className="text-blue">"core_stack"</span>: <span className="text-peach">["Python", "Java", "LLMs", "Kafka"]</span>,
-          <br/>  <span className="text-blue">"achievements"</span>: <span className="text-peach">"Saved_$20M_via_ML_Fraud_Detection"</span>,
+          <br/>  <span className="text-blue">"achievements"</span>: <span className="text-peach">"Engineered_High-Throughput_Data_Pipelines"</span>,
           <br/>  <span className="text-blue">"philosophy"</span>: <span className="text-peach">"Scalability_is_not_optional"</span>
           <br/><span className="text-yellow">{"}"}</span>
         </pre>
@@ -298,7 +298,7 @@ function About() {
           
           <div className="grid grid-cols-2 gap-6">
             <StatsBox value="6+" label="YEARS_XP" color="blue" />
-            <StatsBox value="$20M+" label="ROI_DELIVERED" color="peach" />
+            <StatsBox value="100%" label="HIPAA_COMPLIANT" color="peach" />
           </div>
         </div>
 

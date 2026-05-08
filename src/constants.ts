@@ -68,7 +68,7 @@ export const RESUME_DATA = {
       highlights: [
         "Engineered Python-based automation frameworks integrated with Netflix Conductor and Microsoft O365 APIs to streamline enterprise operations.",
         "Developed a Fraud Detection Engine leveraging machine learning algorithms to analyze real-time transaction streams.",
-        "The system successfully identified and prevented an estimated $10M+ in fraudulent transactions within the first year of deployment.",
+        "The system successfully identified and prevented millions in fraudulent transactions within the first year of deployment.",
         "Implemented secure API endpoints and robust data validation layers to ensure the integrity of sensitive financial data."
       ]
     },
@@ -79,7 +79,7 @@ export const RESUME_DATA = {
       location: "Bangalore",
       highlights: [
         "Conceptualized and built an automated Duplicate Invoice Detection system for the global accounts payable department.",
-        "Utilized pattern matching and fuzzy logic algorithms to identify anomalies, saving an additional $10M by preventing erroneous payments.",
+        "Utilized pattern matching and fuzzy logic algorithms to identify anomalies, saving significant capital by preventing erroneous payments.",
         "Collaborated closely with financial auditors to refine logic for high-accuracy fraud signal detection."
       ]
     },
@@ -123,7 +123,7 @@ export const RESUME_DATA = {
     {
       name: "Fraud Detection Module",
       tech: "ML, Python, Big Data",
-      description: "Real-time transaction analysis saving ~$20M total across US market segments."
+      description: "Real-time transaction analysis protecting transactions across US market segments."
     },
     {
       name: "NLP Email Classifier",
