@@ -239,8 +239,8 @@ function Hero() {
 
       <div className="bg-surface-dim p-4 md:p-10 rounded-3xl border border-border-subtle max-w-3xl shadow-2xl relative group overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-mauve/5 via-transparent to-blue/5 pointer-events-none" />
-        <div className="absolute top-4 right-6 text-[10px] text-gray-500 font-mono tracking-widest">AYUSH_GARG_METADATA.JSON</div>
-        <pre className="text-xs md:text-base leading-relaxed overflow-x-auto no-scrollbar font-mono relative z-10">
+        <div className="absolute top-4 right-6 text-[10px] text-gray-500 font-mono tracking-widest z-20">AYUSH_GARG_METADATA.JSON</div>
+        <pre className="text-xs md:text-base leading-relaxed overflow-x-auto no-scrollbar font-mono relative z-10 pt-8 md:pt-0">
           <span className="text-mauve">const</span> <span className="text-blue">lead_engineer</span> = <span className="text-yellow">{"{"}</span>
           <br/>  <span className="text-blue">"experience"</span>: <span className="text-peach">"7+ years"</span>,
           <br/>  <span className="text-blue">"core_stack"</span>: <span className="text-peach">["Python", "Java", "LLMs", "Kafka", "Kubernetes", "GCP", "FastAPI"]</span>,
@@ -508,15 +508,15 @@ function Contact() {
         )}
       </div>
 
-      <div className="flex justify-center flex-wrap gap-x-6 md:gap-x-12 gap-y-4 px-6 text-[9px] md:text-[10px] font-bold font-mono text-gray-700 uppercase tracking-widest text-center">
-        <div className="flex items-center gap-2">
+      <div className="flex justify-center flex-wrap gap-x-6 md:gap-x-12 gap-y-4 px-6 text-[9px] md:text-[10px] font-bold font-mono text-gray-400 uppercase tracking-widest text-center">
+        <div className="flex items-center gap-2 text-white">
           <div className="w-2 h-2 rounded-full bg-green shadow-[0_0_8px_#a6e3a1]" /> CHANNEL: SECURE
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-white">
           <div className="w-2 h-2 rounded-full bg-blue" /> PROTOCOL: HTTPS
         </div>
-        <div className="flex items-center gap-2 text-gray-500">
-          <div className="w-2 h-2 rounded-full bg-gray-800" /> RECIPIENT: ayushgarg05@gmail.com
+        <div className="flex items-center gap-2 text-gray-400">
+          <div className="w-2 h-2 rounded-full bg-gray-600" /> RECIPIENT: ayushgarg05@gmail.com
         </div>
       </div>
     </motion.section>
