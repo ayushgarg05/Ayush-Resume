@@ -421,11 +421,24 @@ function Contact() {
       message: formData.get("message_body"),
     };
 
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey) {
+      // Mock simulation mode when no key is configured
+      console.warn("VITE_WEB3FORMS_ACCESS_KEY missing - simulating form submission.");
+      await new Promise(resolve => setTimeout(resolve, 800));
+      setStatus("success");
+      return;
+    }
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({
+          access_key: accessKey,
+          ...payload,
+        }),
       });
 
       if (response.ok) {
